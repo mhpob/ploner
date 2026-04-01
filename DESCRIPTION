@@ -1,0 +1,10 @@
+Package: ploner
+Title: A feature-incomplete R interface to the Plone REST API 
+Version: 0.0.0.9000
+Authors@R: 
+    person("Michael", "O'Brien", , "mike@obrien.page", role = c("aut", "cre"))
+Description: This package exists solely to power access to the Ocean Tracking Network's Plone CMS -- but it could be something bigger!
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
