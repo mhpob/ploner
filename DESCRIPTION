@@ -1,5 +1,5 @@
 Package: ploner
-Title: A feature-incomplete R interface to the Plone REST API 
+Title: An experimental, feature-incomplete R interface to the Plone REST API 
 Version: 0.0.0.9000
 Authors@R: 
     person("Michael", "O'Brien", , "mike@obrien.page", role = c("aut", "cre"))
