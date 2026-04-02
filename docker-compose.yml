@@ -1,0 +1,26 @@
+services:
+  backend:
+    image: plone/plone-backend:6.1
+    container_name: plone6-backend
+    environment:
+      - SITE=Plone
+    ports:
+      - "8080:8080"
+    networks:
+      - plone-network
+
+  frontend:
+    image: plone/plone-frontend:latest
+    container_name: plone6-frontend
+    environment:
+      - RAZZLE_DEV_PROXY_API_PATH=http://backend:8080/Plone
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - plone-network
+
+networks:
+  plone-network:
+    driver: bridge
