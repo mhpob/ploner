@@ -12,6 +12,3 @@ pl_delete <- function(plone, path) {
     message(path, " successfully deleted.\n")
   }
 }
-
-# pl_delete(plone, "/data/repository/nsbs/125")
-# pl_delete(plone, "/data/repository/nsbs/sturg_alert2.png")

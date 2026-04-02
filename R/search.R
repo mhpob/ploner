@@ -12,11 +12,3 @@ pl_search <- function(plone, ...) {
     httr2::resp_body_json()
 }
 #note that ?path.query=  searches the given path
-
-# pl_search(
-# "https://members.devel.oceantrack.org",
-# "/data/repository/nsbs",
-# portal_type = "File",
-# b_size = 5,
-# b_start = 15
-# )

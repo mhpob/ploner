@@ -20,12 +20,6 @@ pl_querystring <- function(plone, query, ...) {
   paste("plone.app.querystring.operation", type, operator, sep = ".")
 }
 
-# "https://members.devel.oceantrack.org" |>
-#   pl_querystring(list(
-#     qs_between("modified", "2018-01-01", "2020-01-01"),
-#     qs_path("/data/repository/nsbs", recursive = F)
-#   ))
-
 #'
 #' @param index the index for Plone's index-operator-value syntax
 qs_before <- function(index, before) {
